@@ -1,3 +1,4 @@
+
 # definimos un diccionario donde las keys sean strings y lo values también
 diccionario1 = { 'lunes':'monday', 'martes':'tuesday', 'miércoles':'wednesday' }
 
@@ -41,3 +42,21 @@ diccionario7 = dict.fromkeys(claves, valor_predeterminado)
 
 print("Este es el septimo diccionario:", diccionario7)
 print("------")
+
+# lo primero que vamos a definir es un diccionario. En este caso vamos a crear un diccionario con dos claves o keys las cuales van a ser "nombres" y "nota"
+# los values serán listas donde almacenaremos los nombres de las alumnas y sus notas
+
+diccionario_alumnas = {"nombres": ["Lola", "Marta", "Lorena"], "notas": [8, 9, 6]}
+print("El diccionario que hemos creado es: ", diccionario_alumnas)
+
+#vamos a usar el método len para saber cuantos pares de clave-valor tenemos en el diccionario con la función len()
+print("La cantidad de pares de clave-valor del diccionario es: ", len(diccionario_alumnas))
+
+#vamos a sacar todas las claves del diccionario
+print("Las keys del diccionario son:", diccionario_alumnas.keys())
+
+#vamos a sacar todas los valores del diccionario
+print("Las keys del diccionario son:", diccionario_alumnas.values())
+
+# vamos a sacar todos los apres de claves-valores que tenemos en el diccionario
+print("Los pares de clave-valor del diccionario son: (ESTO NOS DEVUELVE UNA LISTA DE TUPLAS)", diccionario_alumnas.items())
